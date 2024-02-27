@@ -9,7 +9,7 @@ aws s3api create-bucket --bucket ${BUCKET_NAME} --region ${REGION}  --create-buc
 aws s3api delete-public-access-block --bucket ${BUCKET_NAME}
 
 # policy 파일 생성
-cat bucket_policy.json
+rm bucket_policy.json
 
 echo "{
     \"Version\": \"2012-10-17\",
